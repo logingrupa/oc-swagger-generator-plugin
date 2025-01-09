@@ -1,0 +1,19 @@
+{
+    "name": "logingrupa/generateswaggerapi-plugin",
+    "type": "october-plugin",
+    "description": "Opinionated plugin for generating swagger api",
+    "keywords": ["swagger", "api", "documentation", "plugin", "octobercms"],
+    "homepage": "https://github.com/logingrupa/oc-swagger-generator-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rolands Zeltins",
+            "email": "hi@logingrupa.lv",
+            "homepage": "https://logingrupa.lv",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
