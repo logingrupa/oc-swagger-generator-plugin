@@ -1,0 +1,8 @@
+plugin:
+    name: 'logingrupa.generateswaggerapi::lang.plugin.name'
+    description: 'logingrupa.generateswaggerapi::lang.plugin.description'
+    author: Logingrupa
+    icon: icon-smile-o
+    homepage: ''
+navigation:
+permissions:
