@@ -18,34 +18,4 @@ class SwaggerController extends Controller
     {
         return View::make('logingrupa.generateswaggerapi::swagger-ui');
     }
-
-    /**
-     * Return the Swagger JSON.
-     *
-     * @return JsonResponse
-     */
-    public function fnGetSwaggerJson()
-    {
-        $arrSwaggerData = [
-            'openapi' => '3.0.0',
-            'info' => [
-                'title' => 'OctoberCMS API',
-                'version' => '1.0.0',
-            ],
-            'paths' => [
-                '/api/example' => [
-                    'get' => [
-                        'summary' => 'Example endpoint',
-                        'responses' => [
-                            '200' => [
-                                'description' => 'Successful response',
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ];
-
-        return response()->json($arrSwaggerData);
-    }
 }
