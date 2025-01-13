@@ -12,7 +12,7 @@ return [
                 /*
                  * Route for accessing api documentation interface
                  */
-                'api' => 'swagger/documentation',
+                'api' => 'api/docs',
             ],
             'paths' => [
                 /*
@@ -23,7 +23,7 @@ return [
                 /*
                 * Edit to set path where swagger ui assets should be stored
                 */
-                'swagger_ui_assets_path' => env('L5_SWAGGER_UI_ASSETS_PATH', 'plugins/logingrupa/generateswaggerapi/assets/swagger-ui/dist/'),
+                'swagger_ui_assets_path' => env('L5_SWAGGER_UI_ASSETS_PATH', 'plugins/logingrupa/generateswaggerapi/assets/swagger-ui/'),
 
                 /*
                  * File name of the generated json documentation file
