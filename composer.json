@@ -21,5 +21,16 @@
         "allow-plugins": {
             "composer/installers": true
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@copy-swagger-ui-assets"
+        ],
+        "post-update-cmd": [
+            "@copy-swagger-ui-assets"
+        ],
+        "copy-swagger-ui-assets": [
+            "cp -r vendor/swagger-api/swagger-ui/dist/ plugins/logingrupa/generateswaggerapi/assets/swagger-ui || echo 'Copy failed, ensure paths are correct'"
+        ]
     }
 }
