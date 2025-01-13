@@ -44,7 +44,7 @@ return [
                  * Absolute paths to directory containing the swagger annotations are stored.
                  */
                 'annotations' => [
-                    base_path('plugins/eyedoo/training/controllers/Api'),
+                    base_path('plugins/eyedoo/training/controllers/api'),
                 ],
             ],
         ],
