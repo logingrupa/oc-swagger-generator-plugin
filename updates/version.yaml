@@ -1,2 +1,5 @@
 1.0.0:
     - 'Init plugin'
+1.0.1:
+    - 'Copy Swagger UI assets and generate Swagger docs'
+    - copy-swagger-ui-assets.php
