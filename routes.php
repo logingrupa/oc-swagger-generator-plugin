@@ -17,15 +17,5 @@ use Logingrupa\GenerateSwaggerAPI\Controllers\SwaggerJsonController;
 */
 
 Route::group(['prefix' => 'swagger'], function () {
-
-    // GET /swagger/ui
-    // Route to render the Swagger UI page, which will load the interactive API documentation interface.
-    Route::get('ui', [SwaggerController::class, 'fnRenderSwaggerUi'])
-        ->name('swagger.ui');
-
-    // GET /swagger/json
-    // Route to provide the Swagger JSON data. This endpoint returns the API specification
-    // in OpenAPI format (v3.0), which can be consumed by the Swagger UI or other tools.
-    Route::get('json', [SwaggerJsonController::class, 'fnSwaggerJson'])
-        ->name('swagger.json');
+    Route::get('documentation', '\L5Swagger\Http\Controllers\SwaggerController@api');
 });
